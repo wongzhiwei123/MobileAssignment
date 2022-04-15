@@ -18,4 +18,33 @@
     <string name="premium_price">RM188 / month</string>
     <string name="premium_description1">- Able to open up to unlimited classes</string>
     <string name="premium_description2">- Get started with assign task function</string>
+
+    <!--Min Xuan -->
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="login_text">Login</string>
+    <string name="userHint">User Name</string>
+    <string name="passHint">Password</string>
+    <string name="rememberMe">RememberMe</string>
+    <string name="forgetP">Forget your password?</string>
+    <string name="signInButton">Sign In</string>
+    <string name="alternative">Or Connect With:</string>
+    <string name="signUpText">Not a member? Sign Up Here</string>
+    <string name="backToLogin">Back</string>
+    <string name="forgetPass">Forget your password?</string>
+    <string name="emailText">Please enter your email to reset your password</string>
+    <string name="emailHint">Email address</string>
+    <string name="sendLink">Send Link</string>
+    <string name="signUpForget">Not a member? Sign Up</string>
+    <string name="resetText">Reset your password</string>
+    <string name="newpassHint">New password</string>
+    <string name="conNewPassHint">Confirm new password</string>
+    <string name="submitNewPass">Submit</string>
+
+    <!--Seng Tian-->
+    <string name="sendrating">Send Rating</string>
+    <string name="cancelrating">Cancel</string>
+    <string name="verydisatisfied">Very Dissatisfied</string>
+
 </resources>
