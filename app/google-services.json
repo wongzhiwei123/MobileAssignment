@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "946474312854",
+    "firebase_url": "https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "findyourcoach-3083a",
+    "storage_bucket": "findyourcoach-3083a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946474312854:android:7a7f5185d3325b8fd24eb7",
+        "android_client_info": {
+          "package_name": "com.example.assignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946474312854-42a45dj73co4vjvfnq7dl4kqe7eqtetu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpwOd1T5sPZh5_eX41-KnWUwgnQr_R9A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946474312854-42a45dj73co4vjvfnq7dl4kqe7eqtetu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946474312854:android:ce161e3086a8c37ed24eb7",
+        "android_client_info": {
+          "package_name": "com.example.mobileassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946474312854-42a45dj73co4vjvfnq7dl4kqe7eqtetu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpwOd1T5sPZh5_eX41-KnWUwgnQr_R9A8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946474312854-42a45dj73co4vjvfnq7dl4kqe7eqtetu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
