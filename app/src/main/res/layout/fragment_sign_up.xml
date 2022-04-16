@@ -168,7 +168,7 @@
         android:textColor="@color/black"
         android:backgroundTint="@color/white"/>
 
-    <TextView
+    <Button
         android:id="@+id/alrMember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -178,5 +178,8 @@
         android:text="@string/alrMemberText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUpButton" />
+        app:layout_constraintTop_toBottomOf="@+id/signUpButton"
+        android:textColor="@color/black"
+        android:backgroundTint="#00000000"
+        android:textAllCaps="false"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
