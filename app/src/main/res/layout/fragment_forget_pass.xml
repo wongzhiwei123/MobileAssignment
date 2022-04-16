@@ -69,7 +69,7 @@
         android:textColor="@color/black"
         android:backgroundTint="@color/white"/>
 
-    <TextView
+    <Button
         android:id="@+id/forgetSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -79,7 +79,11 @@
         android:text="@string/signUpForget"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sendLinkButton" />
+        app:layout_constraintTop_toBottomOf="@+id/sendLinkButton"
+        android:textColor="@color/black"
+        android:backgroundTint="#00000000"
+        android:textAllCaps="false"
+        />
 
     <Button
         android:id="@+id/backToLogin1"

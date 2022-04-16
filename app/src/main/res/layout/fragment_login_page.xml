@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterPassword"
         android:textColor="@color/black"
-        android:backgroundTint="@color/white"/>
+        android:backgroundTint="#FFFFFF"/>
 
     <EditText
         android:id="@+id/enterPassword"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
 
-    <TextView
+    <Button
         android:id="@+id/forgetPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -98,24 +98,30 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/forgetP"
-        android:textColor="#4E342E"
         app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkToRemember"
-        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword"
+        android:textColor="@color/black"
+        android:backgroundTint="#00000000"
+        android:textAllCaps="false"
+        />
 
-    <TextView
+    <Button
         android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
+        android:backgroundTint="#00FFFFFF"
         android:text="@string/signUpText"
-        android:textColor="#4E342E"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/googleConnect" />
+        app:layout_constraintTop_toBottomOf="@+id/googleConnect"
+        app:rippleColor="#00FFFFFF"
+        android:textAllCaps="false"/>
 
     <TextView
         android:id="@+id/alternativeConnect"
