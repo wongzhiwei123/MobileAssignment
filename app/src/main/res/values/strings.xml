@@ -21,6 +21,24 @@
     <string name="premium_description3">- Able to conduct <b>premium class</b></string>
     <string name="premium_description4">- Included <b>all the features</b> in Basic plan</string>
 
+    <string name="checkout">Checkout</string>
+    <string name="card_information"><b>Card Information</b></string>
+    <string name="card_number">16-Digits Card Number</string>
+    <string name="card_hint">Full Name</string>
+    <string name="card_hint2">XXXX</string>
+    <string name="card_hint3">MM</string>
+    <string name="card_hint4">CVV</string>
+    <string name="card_hint5">YY</string>
+    <string name="card_remember">Remember this card</string>
+    <string name="save_card">Save Card</string>
+    <string name="continue_str">Continue</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="total_payment"><b>Total payment</b></string>
+    <string name="order_complete">Order Completed</string>
+    <string name="order_id">Order ID</string>
+    <string name="add_card">Visa/Debit Card</string>
+
     <!--Min Xuan -->
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -71,24 +89,8 @@
     <string name="cancelrating">Cancel</string>
     <string name="verydisatisfied">Very Dissatisfied</string>
 
-    <string name="checkout">Checkout</string>
-    <string name="card_information"><b>Card Information</b></string>
-    <string name="card_number">16-Digits Card Number</string>
-    <string name="card_hint">Full Name</string>
-    <string name="card_hint2">XXXX</string>
-    <string name="card_hint3">MM</string>
-    <string name="card_hint4">CVV</string>
-    <string name="card_hint5">YY</string>
-    <string name="card_remember">Remember this card</string>
-    <string name="save_card">Save Card</string>
-    <string name="continue_str">Continue</string>
-    <string name="payment_method">Payment Method</string>
-    <string name="subtotal">Subtotal</string>
-    <string name="total_payment"><b>Total payment</b></string>
-    <string name="order_complete">Order Completed</string>
-    <string name="order_id">Order ID</string>
-    <string name="add_card">Visa/Debit Card</string>
 
+    <string name="login">Login</string>
 
 
     <!--Weihao-->

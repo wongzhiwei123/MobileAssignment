@@ -6,10 +6,12 @@
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/bottom_nav_colors.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/container.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_add_basis.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_login.xml" value="0.18958333333333333" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_add_basis_class.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_checkout.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_class.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_login_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_payment_method.xml" value="0.33" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_premium_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_profile.xml" value="0.15443840579710144" />
@@ -18,17 +20,6 @@
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_subscription.xml" value="0.33" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/student_item.xml" value="0.17831813576494426" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/drawable/small_container.xml" value="0.2245" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/drawable/transparent.xml" value="0.2245" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/activity_main.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_certificate.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_edit_profile.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_forget_pass.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_home.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_login_page.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_profile.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_reset_pass.xml" value="0.2857789855072464" />
-        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_sign_up.xml" value="0.2857789855072464" />
       </map>
     </option>
   </component>

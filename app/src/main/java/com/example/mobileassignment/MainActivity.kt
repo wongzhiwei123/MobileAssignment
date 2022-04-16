@@ -76,6 +76,8 @@ class MainActivity : AppCompatActivity() {
                 bottomNavigationView.visibility = View.GONE
             }
         }
+
+        //supportFragmentManager.beginTransaction().replace(R.id.mainContainer, LoginPage()).commit()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
