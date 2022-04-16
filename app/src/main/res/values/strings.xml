@@ -87,6 +87,7 @@
     <string name="total_payment"><b>Total payment</b></string>
     <string name="order_complete">Order Completed</string>
     <string name="order_id">Order ID</string>
+    <string name="add_card">Visa/Debit Card</string>
 
 
 

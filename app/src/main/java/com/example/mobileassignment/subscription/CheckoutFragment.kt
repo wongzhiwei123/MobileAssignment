@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.core.view.isVisible
 import androidx.navigation.Navigation
 import com.example.mobileassignment.R
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class CheckoutFragment : Fragment() {
 
@@ -28,8 +30,15 @@ class CheckoutFragment : Fragment() {
         checkout.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_checkoutFragment_to_paymentMethodFragment)
         }
+
+        //val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        //view.bottomNavigation.menu.findItem(R.id.menu_item).isVisible = false
         return view
     }
 
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+//        val bottomNavigationView = view.findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+//        bottomNavigationView.visibility = View.GONE
+    }
 }

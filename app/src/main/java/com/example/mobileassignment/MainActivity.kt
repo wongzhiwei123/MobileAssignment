@@ -5,8 +5,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.navigation.NavController
+import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -51,9 +54,27 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         setupWithNavController(bottomNavigationView, navController)
+
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.nav_home, R.id.nav_profile, R.id.nav_classes, R.id.nav_subscription
+            )
+        )
+
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        setupWithNavController(bottomNavigationView, navController)
+
+        navController.addOnDestinationChangedListener { _, nd: NavDestination, _ ->
+            if (nd.id == R.id.nav_subscription || nd.id == R.id.nav_home || nd.id == R.id.nav_classes || nd.id == R.id.nav_profile) {
+                bottomNavigationView.visibility = View.VISIBLE
+            } else {
+                bottomNavigationView.visibility = View.GONE
+            }
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
+
     }
 }
