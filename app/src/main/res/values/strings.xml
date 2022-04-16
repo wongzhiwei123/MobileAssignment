@@ -43,6 +43,27 @@
     <string name="newpassHint">New password</string>
     <string name="conNewPassHint">Confirm new password</string>
     <string name="submitNewPass">Submit</string>
+    <string name="faqView">FAQs</string>
+    <string name="aboutMeHint">About yourself</string>
+    <string name="aboutMeTitle">Bio</string>
+    <string name="editBio">Enter your bio</string>
+    <string name="signOutText">Sign Out</string>
+    <string name="userNameHint">User Name</string>
+    <string name="phoneNumberHint">Phone Number</string>
+    <string name="heightHint">Height (CM)</string>
+    <string name="weightHint">Weight (KG)</string>
+    <string name="confirmPassHint">Confirm password</string>
+    <string name="buttonSignUp">Sign Up</string>
+    <string name="alrMemberText">Already a member? Sign In here</string>
+    <string name="certificate">Please upload your certificate of authentification to register as a coach.</string>
+    <string name="certificateHint">Upload your certificate here</string>
+    <string name="submitCertButton">Submit</string>
+    <string name="editNewEmail">Enter new email</string>
+    <string name="editPhone">Enter your new phone number</string>
+    <string name="editHeight">New height</string>
+    <string name="editWeight">New weight</string>
+    <string name="editPassword">Enter your new password</string>
+    <string name="confirmEditPass">Confirm your new password</string>
 
     <!--Seng Tian-->
     <string name="sendrating">Send Rating</string>
