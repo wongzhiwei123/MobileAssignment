@@ -37,7 +37,7 @@
     <string name="forgetPass">Forget your password?</string>
     <string name="emailText">Please enter your email to reset your password</string>
     <string name="emailHint">Email address</string>
-    <string name="sendLink">Send Link</string>
+    <string name="sendLink">Verify</string>
     <string name="signUpForget">Not a member? Sign Up</string>
     <string name="resetText">Reset your password</string>
     <string name="newpassHint">New password</string>

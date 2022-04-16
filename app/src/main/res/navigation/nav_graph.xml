@@ -59,5 +59,66 @@
         android:id="@+id/nav_editProfile"
         android:name="com.example.mobileassignment.Profile.EditProfile"
         android:label="fragment_edit_profile"
-        tools:layout="@layout/fragment_edit_profile" />
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_nav_editProfile_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.mobileassignment.Profile.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPage_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_loginPage_to_forgetPassword"
+            app:destination="@id/forgetPassword" />
+        <action
+            android:id="@+id/action_loginPage_to_signUpAccount"
+            app:destination="@id/signUpAccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPassword"
+        android:name="com.example.mobileassignment.Profile.ForgetPass"
+        android:label="fragment_forget_pass"
+        tools:layout="@layout/fragment_forget_pass" >
+        <action
+            android:id="@+id/action_forgetPassword_to_resetPass2"
+            app:destination="@id/resetPass2" />
+        <action
+            android:id="@+id/action_forgetPassword_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/resetPass2"
+        android:name="com.example.mobileassignment.Profile.ResetPass"
+        android:label="fragment_reset_pass"
+        tools:layout="@layout/fragment_reset_pass" >
+        <action
+            android:id="@+id/action_resetPass2_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpAccount"
+        android:name="com.example.mobileassignment.Profile.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpAccount_to_certificate"
+            app:destination="@id/certificate" />
+        <action
+            android:id="@+id/action_signUpAccount_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/certificate"
+        android:name="com.example.mobileassignment.Profile.Certificate"
+        android:label="fragment_certificate"
+        tools:layout="@layout/fragment_certificate" >
+        <action
+            android:id="@+id/action_certificate_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>

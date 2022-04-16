@@ -12,6 +12,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.mobileassignment.Profile.LoginPage
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -27,6 +28,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //supportFragmentManager.beginTransaction().replace(R.id.mainContainer, LoginPage()).commit()
 
         val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
         val myRef = database.getReference("user")
@@ -65,9 +68,11 @@ class MainActivity : AppCompatActivity() {
         setupWithNavController(bottomNavigationView, navController)
 
         navController.addOnDestinationChangedListener { _, nd: NavDestination, _ ->
+            bottomNavigationView.visibility = View.GONE
             if (nd.id == R.id.nav_subscription || nd.id == R.id.nav_home || nd.id == R.id.nav_classes || nd.id == R.id.nav_profile) {
                 bottomNavigationView.visibility = View.VISIBLE
-            } else {
+            }
+            else {
                 bottomNavigationView.visibility = View.GONE
             }
         }
