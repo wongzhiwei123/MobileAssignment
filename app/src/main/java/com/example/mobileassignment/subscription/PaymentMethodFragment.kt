@@ -1,4 +1,4 @@
-package com.example.mobileassignment.bottomNav
+package com.example.mobileassignment.subscription
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ClassFragment.newInstance] factory method to
+ * Use the [PaymentMethodFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ClassFragment : Fragment() {
+class PaymentMethodFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +35,7 @@ class ClassFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_class, container, false)
+        return inflater.inflate(R.layout.fragment_payment_method, container, false)
     }
 
     companion object {
@@ -45,12 +45,12 @@ class ClassFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ClassFragment.
+         * @return A new instance of fragment PaymentMethodFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ClassFragment().apply {
+            PaymentMethodFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

@@ -10,14 +10,16 @@
     <!--Zhi Wei-->
     <string name="str_subscription">Subscription</string>
     <string name="basic"><b>Basic</b></string>
-    <string name="basic_price">RM<b>20</b> / month</string>
+    <string name="basic_price">RM<b>88</b> / month</string>
     <string name="basic_description1">- Able to open up to <b>5 classes</b></string>
     <string name="basic_description2">- Get started with <b>rating and comment</b> function</string>
     <string name="select_plan">Choose Plan →</string>
-    <string name="premium">Premium</string>
-    <string name="premium_price">RM188 / month</string>
-    <string name="premium_description1">- Able to open up to unlimited classes</string>
-    <string name="premium_description2">- Get started with assign task function</string>
+    <string name="premium"><b>Premium</b></string>
+    <string name="premium_price">RM<b>188</b> / month</string>
+    <string name="premium_description1">- Able to open up to <b>unlimited classes</b></string>
+    <string name="premium_description2">- Get started with <b>assign task</b> function</string>
+    <string name="premium_description3">- Able to conduct <b>premium class</b></string>
+    <string name="premium_description4">- Included <b>all the features</b> in Basic plan</string>
 
     <!--Min Xuan -->
     <string name="menu_home">Home</string>
@@ -47,4 +49,41 @@
     <string name="cancelrating">Cancel</string>
     <string name="verydisatisfied">Very Dissatisfied</string>
 
+    <string name="checkout">Checkout</string>
+    <string name="card_information"><b>Card Information</b></string>
+    <string name="card_number">16-Digits Card Number</string>
+    <string name="card_hint">Full Name</string>
+    <string name="card_hint2">XXXX</string>
+    <string name="card_hint3">MM</string>
+    <string name="card_hint4">CVV</string>
+    <string name="card_hint5">YY</string>
+    <string name="card_remember">Remember this card</string>
+    <string name="save_card">Save Card</string>
+    <string name="continue_str">Continue</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="total_payment"><b>Total payment</b></string>
+    <string name="order_complete">Order Completed</string>
+    <string name="order_id">Order ID</string>
+
+
+    <!--Weihao-->
+    <string-array name="TrainingDay">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="TrainingTime">
+        <item>8:00am - 10:00am</item>
+        <item>10:00am - 12:00pm</item>
+        <item>1:00pm - 3:00pm</item>
+        <item>3:00pm - 5:00pm</item>
+        <item>5:00pm - 7:00pm</item>
+        <item>7:00pm - 9:00pm</item>
+    </string-array>
 </resources>

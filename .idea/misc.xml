@@ -5,12 +5,16 @@
       <map>
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/bottom_nav_colors.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/container.xml" value="0.1" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_add_basis.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_add_basis_class.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_checkout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_class.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_payment_method.xml" value="0.33" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_receipt.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_subscription.xml" value="0.33" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/student_item.xml" value="0.17831813576494426" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_add_basis_class.xml" value="0.2359375" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_premium_details.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/student_item.xml" value="0.14074074074074075" />
       </map>
     </option>
   </component>

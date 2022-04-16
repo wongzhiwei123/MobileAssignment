@@ -8,16 +8,77 @@
     tools:context=".Class.AddBasisClass">
 
     <EditText
-        android:id="@+id/edtTxtClassName"
+        android:id="@+id/edtxtclassName"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="Class name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="CREATE"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtDescription"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtxtDescription"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtDescription" />
+
+    <ImageButton
+        android:id="@+id/imgBtn"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/profile"
+        android:src="@drawable/ic_baseline_person_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtxtDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerTime"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTime" />
+
+    <Spinner
+        android:id="@+id/spinnerDay"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/TrainingDay"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtclassName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtxtclassName"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtclassName" />
+
+    <Spinner
+        android:id="@+id/spinnerTime"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/TrainingTime"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerDay"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDay"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
