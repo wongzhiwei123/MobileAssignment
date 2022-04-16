@@ -14,7 +14,11 @@
         android:id="@+id/nav_profile"
         android:name="com.example.mobileassignment.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_editProfile2"
+            app:destination="@id/nav_editProfile" />
+    </fragment>
     <fragment
         android:id="@+id/nav_subscription"
         android:name="com.example.mobileassignment.SubscriptionFragment"
@@ -51,4 +55,9 @@
         android:name="com.example.mobileassignment.Class.AddBasisClass"
         android:label="fragment_add_basis_class"
         tools:layout="@layout/fragment_add_basis_class" />
+    <fragment
+        android:id="@+id/nav_editProfile"
+        android:name="com.example.mobileassignment.Profile.EditProfile"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
 </navigation>

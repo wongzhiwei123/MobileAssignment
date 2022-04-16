@@ -64,6 +64,7 @@
     <string name="editWeight">New weight</string>
     <string name="editPassword">Enter your new password</string>
     <string name="confirmEditPass">Confirm your new password</string>
+    <string name="goToEdit">Edit Profile</string>
 
     <!--Seng Tian-->
     <string name="sendrating">Send Rating</string>
@@ -86,6 +87,7 @@
     <string name="total_payment"><b>Total payment</b></string>
     <string name="order_complete">Order Completed</string>
     <string name="order_id">Order ID</string>
+
 
 
     <!--Weihao-->
