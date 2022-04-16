@@ -48,16 +48,17 @@ class AddBasisClass : Fragment() {
         return view
     }
 
-//    var selectedPhotoUri: Uri? = null
-//
+    var selectedPhotoUri: Uri? = null
+
 //    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 //        super.onActivityResult(requestCode, resultCode, data)
 //        if(requestCode == 0 && resultCode == Activity.RESULT_OK && data!=null){
+//            val imgBtn = view?.findViewById<ImageButton>(R.id.imgBtn)
 //            selectedPhotoUri = data.data
-//            val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, uri)
+//            val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectedPhotoUri)
 //
 //            val bitmapDrawable = BitmapDrawable(bitmap)
-//            imgBtn.setBackgroundDrawable(bitmapDrawable)
+//            imgBtn?.setBackgroundDrawable(bitmapDrawable)
 //        }
 //    }
 
