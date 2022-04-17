@@ -91,6 +91,11 @@
 
 
     <string name="login">Login</string>
+    <string name="trainingname">Training Name</string>
+    <string name="description">Description</string>
+    <string name="time">Time</string>
+    <string name="upload">Upload</string>
+    <string name="set">Set</string>
 
 
     <!--Weihao-->

@@ -138,4 +138,23 @@
         android:name="com.example.mobileassignment.Class.BasicClassDetails"
         android:label="fragment_basic_class_details"
         tools:layout="@layout/fragment_basic_class_details" />
+    <fragment
+        android:id="@+id/nav_rating"
+        android:name="com.example.mobileassignment.rating.Rating"
+        android:label="fragment_rating"
+        tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/nav_assignTask"
+        android:name="com.example.mobileassignment.task.AssignTask"
+        android:label="fragment_assign_task"
+        tools:layout="@layout/fragment_assign_task" >
+        <action
+            android:id="@+id/action_nav_assignTask_to_tasklist"
+            app:destination="@id/tasklist" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasklist"
+        android:name="com.example.mobileassignment.task.tasklist"
+        android:label="fragment_tasklist"
+        tools:layout="@layout/fragment_tasklist" />
 </navigation>
