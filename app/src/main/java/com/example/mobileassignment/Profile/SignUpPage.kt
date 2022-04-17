@@ -35,15 +35,15 @@ class SignUpPage : AppCompatActivity() {
             val conPass : EditText = findViewById(R.id.confirmEditPassword)
             val conP = conPass.text.toString()
 
-            myRef.child("account1").child("details").child("phone").setValue(userName)
-            myRef.child("account1").child("details").child("phone").setValue(userEmail)
-            myRef.child("account1").child("details").child("phone").setValue(userPhone)
-            myRef.child("account1").child("details").child("height").setValue(userHeight)
-            myRef.child("account1").child("details").child("weight").setValue(userWeight)
+            myRef.child("account2").child("details").child("phone").setValue(userName)
+            myRef.child("account2").child("details").child("phone").setValue(userEmail)
+            myRef.child("account2").child("details").child("phone").setValue(userPhone)
+            myRef.child("account2").child("details").child("height").setValue(userHeight)
+            myRef.child("account2").child("details").child("weight").setValue(userWeight)
 
             if(userPass != null && conP != null){
                 if(userPass== conP){
-                    myRef.child("account1").child("details").child("password").setValue(userPass)
+                    myRef.child("account2").child("details").child("password").setValue(userPass)
                 }
                 else{
                     Toast.makeText(this,"Passcode is not updated as the passcode is not the same", Toast.LENGTH_SHORT).show()
