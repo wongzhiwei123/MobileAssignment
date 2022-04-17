@@ -26,7 +26,7 @@ public class PremiumStudentAdapter1 extends RecyclerView.Adapter<PremiumStudentA
     @NonNull
     @Override
     public PremiumStudentAdapter1.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.studentdetails,parent,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.premium_student_details,parent,false);
         return new MyViewHolder(v);
     }
 
@@ -47,9 +47,9 @@ public class PremiumStudentAdapter1 extends RecyclerView.Adapter<PremiumStudentA
         TextView userName, trainingDate, trainingTime;
         public MyViewHolder(@NonNull View itemView){
             super(itemView);
-            userName = itemView.findViewById(R.id.txtUserName);
-            trainingDate = itemView.findViewById(R.id.txtTrainingDate);
-            trainingTime = itemView.findViewById(R.id.txtTrainingTime);
+            userName = itemView.findViewById(R.id.txtBasicClass);
+            trainingDate = itemView.findViewById(R.id.txtBasicTrainingDay);
+            trainingTime = itemView.findViewById(R.id.txtBasicTrainingTime);
         }
     }
 }

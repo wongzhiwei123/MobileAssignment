@@ -5,14 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileassignment.R
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.storage.FirebaseStorage
-import com.google.firebase.storage.StorageReference
 
 
 class PremiumDetails : Fragment(){
@@ -34,7 +30,7 @@ class PremiumDetails : Fragment(){
         val view = inflater.inflate(R.layout.fragment_premium_details, container, false)
 
         database = FirebaseDatabase.getInstance().reference
-        recyclerViewStudent = view.findViewById(R.id.rvPremiumStudent)
+        recyclerViewStudent = view.findViewById(R.id.rvBasicClass)
 
 
 //        recyclerView = view.findViewById(R.id.rvPremiumStudent);

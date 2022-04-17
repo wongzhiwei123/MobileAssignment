@@ -35,8 +35,8 @@ class PremiumStudentAdapter(private val context: Context, private val premiumStu
 }
 
 class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-    val userName: TextView = itemView.findViewById(R.id.txtUserName)
-    val trainingDate: TextView = itemView.findViewById(R.id.txtTrainingDate)
-    val trainingTime: TextView = itemView.findViewById(R.id.txtTrainingTime)
-    val imageUri: ImageView = itemView.findViewById(R.id.imgStudent)
+    val userName: TextView = itemView.findViewById(R.id.txtStudentName)
+    val trainingDate: TextView = itemView.findViewById(R.id.txtStudentTrainingDate)
+    val trainingTime: TextView = itemView.findViewById(R.id.txtStudentTrainingTime)
+    val imageUri: ImageView = itemView.findViewById(R.id.imgClass)
 }

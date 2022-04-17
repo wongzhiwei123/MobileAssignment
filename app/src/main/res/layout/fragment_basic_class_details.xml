@@ -2,29 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout6"
+    android:id="@+id/frameLayout13"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Class.PremiumDetails">
+    tools:context=".Class.BasicClassDetails">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvPremiumStudent"
+        android:id="@+id/rvBasicClass"
         android:layout_width="409dp"
         android:layout_height="729dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/premium_student_details" />
+        tools:listitem="@layout/basic_class_details" />
 
     <ImageButton
-        android:id="@+id/imgbtnAdd"
+        android:id="@+id/imgbtnAddClass"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
-        android:contentDescription="addPremium"
+        android:contentDescription="addClass"
         android:src="@drawable/ic_baseline_add_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
