@@ -9,30 +9,30 @@
     tools:context=".ClassFragment">
 
     <Button
-        android:id="@+id/btnViewBasis"
+        android:id="@+id/btnViewBasic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:text="VIEW"
         app:layout_constraintBottom_toBottomOf="@+id/imgview1"
         app:layout_constraintEnd_toEndOf="@+id/imgview1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imgview1" />
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnViewPremium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
         android:text="VIEW"
         app:layout_constraintBottom_toBottomOf="@+id/imgView2"
         app:layout_constraintEnd_toEndOf="@+id/imgView2"
-        app:layout_constraintStart_toStartOf="@+id/imgView2"
-        app:layout_constraintTop_toTopOf="@+id/imgView2" />
+        app:layout_constraintStart_toStartOf="@+id/imgView2" />
 
     <ImageView
         android:id="@+id/imgview1"
-        android:layout_width="400dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:src="@drawable/court"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
@@ -41,13 +41,37 @@
 
     <ImageView
         android:id="@+id/imgView2"
-        android:layout_width="400dp"
-        android:layout_height="350dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_marginBottom="8dp"
         android:src="@drawable/court2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgview1" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="BASIC CLASS"
+        android:textColor="#F3EBEB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnViewBasic"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewBasic"
+        app:layout_constraintStart_toStartOf="@+id/btnViewBasic" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="PREMIUM CLASS"
+        android:textColor="#F3EBEB"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnViewPremium"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewPremium"
+        app:layout_constraintStart_toStartOf="@+id/btnViewPremium" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

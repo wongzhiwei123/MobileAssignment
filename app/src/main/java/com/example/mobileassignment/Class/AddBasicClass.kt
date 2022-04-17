@@ -43,6 +43,7 @@ class AddBasicClass : Fragment(R.layout.fragment_add_basic_class) {
             val trainingDay = view.findViewById<Spinner>(R.id.spinnerDay).selectedItem.toString()
             val trainingTime = view.findViewById<Spinner>(R.id.spinnerTime).selectedItem.toString()
             val description = view.findViewById<EditText>(R.id.edtxtDescription).toString()
+            //val imageClass = view.findViewById<ImageView>(R.id.imgClass).setImageURI()
 
             val BasicClass = BasicClass(className,trainingDay,trainingTime,description)
             database.child("basicClass").setValue(BasicClass).addOnSuccessListener {
@@ -54,7 +55,7 @@ class AddBasicClass : Fragment(R.layout.fragment_add_basic_class) {
                 }
         }
 
-        val imgBtn = view.findViewById<ImageButton>(R.id.imgBtn)
+        val imgBtn = view.findViewById<ImageButton>(R.id.imgAddClass)
         imgBtn.setOnClickListener{
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"

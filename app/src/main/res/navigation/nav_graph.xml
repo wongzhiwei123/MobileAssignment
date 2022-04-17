@@ -32,7 +32,14 @@
         android:id="@+id/nav_classes"
         android:name="com.example.mobileassignment.ClassFragment"
         android:label="fragment_class"
-        tools:layout="@layout/fragment_class" />
+        tools:layout="@layout/fragment_class" >
+        <action
+            android:id="@+id/action_nav_classes_to_premiumDetails"
+            app:destination="@id/premiumDetails" />
+        <action
+            android:id="@+id/action_nav_classes_to_basicClassDetails"
+            app:destination="@id/basicClassDetails" />
+    </fragment>
     <fragment
         android:id="@+id/checkoutFragment"
         android:name="com.example.mobileassignment.subscription.CheckoutFragment"
@@ -122,6 +129,16 @@
             android:id="@+id/action_certificate_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
+    <fragment
+        android:id="@+id/premiumDetails"
+        android:name="com.example.mobileassignment.Class.PremiumDetails"
+        android:label="fragment_premium_details"
+        tools:layout="@layout/fragment_premium_details" />
+    <fragment
+        android:id="@+id/basicClassDetails"
+        android:name="com.example.mobileassignment.Class.BasicClassDetails"
+        android:label="fragment_basic_class_details"
+        tools:layout="@layout/fragment_basic_class_details" />
     <fragment
         android:id="@+id/receiptFragment"
         android:name="com.example.mobileassignment.subscription.ReceiptFragment"

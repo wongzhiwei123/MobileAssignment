@@ -20,42 +20,55 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imgStudent"
-                android:layout_width="90dp"
-                android:layout_height="90dp"
+                android:id="@+id/imgClass"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_baseline_person_24" />
+                app:srcCompat="@drawable/court" />
 
             <TextView
-                android:id="@+id/txtUserName"
+                android:id="@+id/txtBasicClass"
                 android:layout_width="220dp"
                 android:layout_height="45dp"
-                android:text="Name"
-                app:layout_constraintStart_toEndOf="@+id/imgStudent"
-                app:layout_constraintTop_toTopOf="@+id/imgStudent" />
+                android:text="Basic Class"
+                app:layout_constraintStart_toEndOf="@+id/imgClass"
+                app:layout_constraintTop_toTopOf="@+id/imgClass" />
 
             <TextView
-                android:id="@+id/txtTrainingDate"
+                android:id="@+id/txtBasicTrainingDay"
                 android:layout_width="110dp"
-                android:layout_height="45dp"
-                android:text="Training Date"
+                android:layout_height="30dp"
+                android:text="Training Day"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imgStudent"
-                app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+                app:layout_constraintStart_toEndOf="@+id/imgClass"
+                app:layout_constraintTop_toBottomOf="@+id/txtBasicClass"
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/txtTrainingTime"
+                android:id="@+id/txtBasicTrainingTime"
                 android:layout_width="110dp"
-                android:layout_height="45dp"
+                android:layout_height="30dp"
                 android:text="Training Time"
-                app:layout_constraintBottom_toBottomOf="@+id/imgStudent"
+                app:layout_constraintBottom_toBottomOf="@+id/imgClass"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/txtTrainingDate"
-                app:layout_constraintTop_toBottomOf="@+id/txtUserName"
+                app:layout_constraintStart_toEndOf="@+id/txtBasicTrainingDay"
+                app:layout_constraintTop_toBottomOf="@+id/txtBasicClass"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtBasicDescription"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Description"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgClass"
+                app:layout_constraintTop_toBottomOf="@+id/txtBasicTrainingDay" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
