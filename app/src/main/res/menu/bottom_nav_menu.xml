@@ -17,4 +17,7 @@
         android:id="@+id/nav_subscription"
         android:icon="@drawable/ic_baseline_verified_user_24"
         android:title="@string/subscription" />
+    <item
+        android:id="@+id/nav_assignTask"
+        android:title="Task" />
 </menu>
