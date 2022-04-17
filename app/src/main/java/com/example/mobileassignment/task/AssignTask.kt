@@ -52,9 +52,13 @@ class AssignTask : Fragment() {
                 training.text.clear()
                 desc.text.clear()
                 set.text.clear()
+
+
                     Navigation.findNavController(view).navigate(R.id.action_nav_assignTask_to_tasklist)
 
                 Toast.makeText(context, "Successfully uploaded", Toast.LENGTH_SHORT).show()
+
+
                 }.addOnFailureListener{
                     Toast.makeText(context,"Failed",Toast.LENGTH_SHORT).show()
                 }

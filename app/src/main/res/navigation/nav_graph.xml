@@ -146,13 +146,9 @@
         <action
             android:id="@+id/action_nav_assignTask_to_tasklist"
             app:destination="@id/tasklist"
-            app:popUpTo="@id/nav_assignTask" />
+            app:popUpTo="@id/nav_assignTask"
+            app:popUpToInclusive="true" />
     </fragment>
-    <fragment
-        android:id="@+id/tasklist"
-        android:name="com.example.mobileassignment.task.tasklist"
-        android:label="fragment_tasklist"
-        tools:layout="@layout/fragment_tasklist" />
     <fragment
         android:id="@+id/receiptFragment"
         android:name="com.example.mobileassignment.subscription.ReceiptFragment"
@@ -179,4 +175,9 @@
         android:name="com.example.mobileassignment.rating.Rating"
         android:label="fragment_rating"
         tools:layout="@layout/fragment_rating" />
+    <fragment
+        android:id="@+id/tasklist"
+        android:name="com.example.mobileassignment.task.tasklist"
+        android:label="fragment_tasklist"
+        tools:layout="@layout/fragment_tasklist" />
 </navigation>
