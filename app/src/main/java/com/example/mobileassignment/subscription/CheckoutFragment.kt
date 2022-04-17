@@ -32,23 +32,7 @@ class CheckoutFragment : Fragment() {
 
         val planSelected = requireArguments().getInt("itemID")
 
-        val checkout: Button = view.findViewById(R.id.btn_checkout)
-        var method=0
-        checkout.setOnClickListener{
-            method = view.findViewById<Spinner>(R.id.pay_spinner).selectedItemPosition+1
-            if(method==1) {
-                findNavController().navigate(R.id.action_checkoutFragment_to_paymentMethodFragment, Bundle().apply {
-                    putInt("planSelect", planSelected)
-//                    putInt("planSelect", planSelected)
-//                    putInt("planSelect", planSelected)
-//                    putInt("planSelect", planSelected)
-                })
-//                Navigation.findNavController(view)
-//                    .navigate(R.id.action_checkoutFragment_to_paymentMethodFragment)
-            }else if(method==2){
 
-            }
-        }
 
         //show the details for different plan
 
@@ -69,10 +53,12 @@ class CheckoutFragment : Fragment() {
 
         //calculate payment
         val btn:Button = view.findViewById(R.id.calculateButton)
-
+        var basicMonth=0
+        var premiumMonth=0
+        var totalP=0
         btn.setOnClickListener{
-            val basicMonth: Int = view.findViewById<Spinner>(R.id.basic_month).selectedItemPosition
-            val premiumMonth: Int = view.findViewById<Spinner>(R.id.premium_month).selectedItemPosition
+            basicMonth= view.findViewById<Spinner>(R.id.basic_month).selectedItemPosition
+            premiumMonth= view.findViewById<Spinner>(R.id.premium_month).selectedItemPosition
             val subTotal:TextView=view.findViewById(R.id.subtotal)
             val processFee:TextView=view.findViewById(R.id.processingFee)
             val total:TextView=view.findViewById(R.id.totalPayment)
@@ -86,6 +72,32 @@ class CheckoutFragment : Fragment() {
             subTotal.text=String.format("%.2f",calculation*0.95)
             processFee.text=String.format("%.2f",calculation*0.05).toString()
             total.text=calculation.toString()
+            totalP=calculation
+        }
+
+        //checkout button
+        val checkout: Button = view.findViewById(R.id.btn_checkout)
+        var method=0
+        var monthS=0
+        checkout.setOnClickListener{
+            method = view.findViewById<Spinner>(R.id.pay_spinner).selectedItemPosition+1
+            if(planSelected==1){
+                monthS=basicMonth
+            }else if(planSelected==2){
+                monthS=premiumMonth
+            }
+            if(method==1) {
+                findNavController().navigate(R.id.action_checkoutFragment_to_paymentMethodFragment, Bundle().apply {
+                    putInt("planSelect", planSelected)
+                    putInt("month", monthS)
+                    putInt("total", totalP)
+                    putString("method", "Credit/Debit Card")
+                })
+//                Navigation.findNavController(view)
+//                    .navigate(R.id.action_checkoutFragment_to_paymentMethodFragment)
+            }else if(method==2){
+
+            }
         }
 
 
