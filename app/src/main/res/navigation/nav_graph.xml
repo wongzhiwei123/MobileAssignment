@@ -52,9 +52,9 @@
         tools:layout="@layout/fragment_payment_method" />
     <fragment
         android:id="@+id/addBasisClass"
-        android:name="com.example.mobileassignment.Class.AddBasisClass"
+        android:name="com.example.mobileassignment.Class.AddBasicClass"
         android:label="fragment_add_basis_class"
-        tools:layout="@layout/fragment_add_basis_class" />
+        tools:layout="@layout/fragment_add_basic_class" />
     <fragment
         android:id="@+id/nav_editProfile"
         android:name="com.example.mobileassignment.Profile.EditProfile"
