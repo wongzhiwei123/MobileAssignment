@@ -55,7 +55,7 @@ class AddBasicClass : Fragment(R.layout.fragment_add_basic_class) {
                 }
         }
 
-        val imgBtn = view.findViewById<ImageButton>(R.id.imgBtn)
+        val imgBtn = view.findViewById<ImageButton>(R.id.imgAddClass)
         imgBtn.setOnClickListener{
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"

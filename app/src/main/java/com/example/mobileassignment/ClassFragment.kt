@@ -5,7 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.mobileassignment.R
+import android.widget.Button
+import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +36,17 @@ class ClassFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_class, container, false)
+        val view = inflater.inflate(R.layout.fragment_class, container, false)
+        val toBasicClass: Button = view.findViewById(R.id.btnViewBasic)
+        toBasicClass.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_nav_classes_to_basicClassDetails)
+        }
+
+        val toPremiumClass: Button = view.findViewById(R.id.btnViewPremium)
+        toPremiumClass.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_nav_classes_to_premiumDetails)
+        }
+        return view
     }
 
     companion object {

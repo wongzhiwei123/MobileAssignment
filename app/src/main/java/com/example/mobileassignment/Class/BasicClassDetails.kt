@@ -5,10 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileassignment.R
 import com.google.firebase.database.*
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 
 class BasicClassDetails : Fragment() {
@@ -40,22 +43,29 @@ class BasicClassDetails : Fragment() {
     }
 
     private fun getBasicClass() {
-        database = FirebaseDatabase.getInstance().getReference("user")
+        database = FirebaseDatabase.getInstance().getReference("class")
 
-        database.addValueEventListener(object:ValueEventListener{
+        database.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
 
-            override fun onDataChange(snapshot: DataSnapshot){
+                classArrayList.clear()
                 if(snapshot.exists()){
-                    for(basicClassSnapshot in snapshot.children){
-                        val basicClass = basicClassSnapshot.getValue(BasicClass::class.java)
-                        classArrayList.add(basicClass!!)
+                    for (classSnap in snapshot.children){
+                        val bClass = classSnap.getValue(BasicClass::class.java)
+                        classArrayList.add(bClass!!)
                     }
-                    recyclerViewBasic.adapter = BasicClassAdapter(classArrayList)
+                    val mAdapter = BasicClassAdapter(classArrayList)
+                    recyclerViewBasic.adapter = mAdapter;
                 }
-            }
-            override fun onCancelled(error:DatabaseError){
 
             }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
         })
     }
+
+
 }

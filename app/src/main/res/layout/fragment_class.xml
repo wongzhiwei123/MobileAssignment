@@ -9,7 +9,7 @@
     tools:context=".ClassFragment">
 
     <Button
-        android:id="@+id/btnViewBasis"
+        android:id="@+id/btnViewBasic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
@@ -58,9 +58,9 @@
         android:text="BASIC CLASS"
         android:textColor="#F3EBEB"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnViewBasis"
-        app:layout_constraintEnd_toEndOf="@+id/btnViewBasis"
-        app:layout_constraintStart_toStartOf="@+id/btnViewBasis" />
+        app:layout_constraintBottom_toTopOf="@+id/btnViewBasic"
+        app:layout_constraintEnd_toEndOf="@+id/btnViewBasic"
+        app:layout_constraintStart_toStartOf="@+id/btnViewBasic" />
 
     <TextView
         android:id="@+id/txt2"
