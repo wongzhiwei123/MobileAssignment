@@ -30,9 +30,6 @@
         <action
             android:id="@+id/action_nav_subscription_to_checkoutFragment"
             app:destination="@id/checkoutFragment" />
-        <action
-            android:id="@+id/action_nav_subscription_to_addBasisClass"
-            app:destination="@id/addBasisClass" />
     </fragment>
     <fragment
         android:id="@+id/nav_classes"
@@ -45,6 +42,9 @@
         <action
             android:id="@+id/action_nav_classes_to_basicClassDetails"
             app:destination="@id/basicClassDetails" />
+        <action
+            android:id="@+id/action_nav_classes_to_createBasicClass"
+            app:destination="@id/createBasicClass" />
     </fragment>
     <fragment
         android:id="@+id/checkoutFragment"
@@ -59,12 +59,11 @@
         android:id="@+id/paymentMethodFragment"
         android:name="com.example.mobileassignment.subscription.PaymentMethodFragment"
         android:label="@string/add_card"
-        tools:layout="@layout/fragment_payment_method" />
-    <fragment
-        android:id="@+id/addBasisClass"
-        android:name="com.example.mobileassignment.Class.AddBasicClass"
-        android:label="fragment_add_basis_class"
-        tools:layout="@layout/fragment_add_basic_class" />
+        tools:layout="@layout/fragment_payment_method" >
+        <action
+            android:id="@+id/action_paymentMethodFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_editProfile"
         android:name="com.example.mobileassignment.Profile.EditProfile"
@@ -121,12 +120,12 @@
     </fragment>
     <fragment
         android:id="@+id/premiumDetails"
-        android:name="com.example.mobileassignment.Class.PremiumDetails"
+        android:name="com.example.mobileassignment.classes.PremiumDetails"
         android:label="fragment_premium_details"
         tools:layout="@layout/fragment_premium_details" />
     <fragment
         android:id="@+id/basicClassDetails"
-        android:name="com.example.mobileassignment.Class.BasicClassDetails"
+        android:name="com.example.mobileassignment.classes.BasicClassDetails"
         android:label="fragment_basic_class_details"
         tools:layout="@layout/fragment_basic_class_details" />
     <fragment
@@ -148,6 +147,20 @@
         android:name="com.example.mobileassignment.task.tasklist"
         android:label="fragment_tasklist"
         tools:layout="@layout/fragment_tasklist" />
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="com.example.mobileassignment.subscription.ReceiptFragment"
+        android:label="@string/receipt"
+        tools:layout="@layout/fragment_receipt" >
+        <action
+            android:id="@+id/action_receiptFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/createBasicClass"
+        android:name="com.example.mobileassignment.classes.CreateBasicClass"
+        android:label="fragment_create_basic_class"
+        tools:layout="@layout/fragment_create_basic_class" />
     <fragment
         android:id="@+id/certificate"
         android:name="com.example.mobileassignment.Profile.Certificate"

@@ -6,12 +6,20 @@
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/bottom_nav_colors.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/container.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_add_basis.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_add_basic_class.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_add_basis_class.xml" value="0.36666666666666664" />
-        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_checkout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_assign_task.xml" value="0.17831813576494426" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_basic_class_info.xml" value="0.33" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_checkout.xml" value="0.45685740236148953" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_class.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_create_basic_class.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_login_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_payment_method.xml" value="0.33" />
-        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_profile.xml" value="0.15443840579710144" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_premium_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_rating.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_receipt.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_subscription.xml" value="0.33" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/student_item.xml" value="0.17831813576494426" />

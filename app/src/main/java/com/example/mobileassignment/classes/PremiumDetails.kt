@@ -1,4 +1,4 @@
-package com.example.mobileassignment.Class
+package com.example.mobileassignment.classes
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

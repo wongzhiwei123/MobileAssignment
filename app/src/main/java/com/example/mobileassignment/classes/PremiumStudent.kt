@@ -1,6 +1,4 @@
-package com.example.mobileassignment.Class
-
-import android.net.Uri
+package com.example.mobileassignment.classes
 
 data class PremiumStudent(
     val userName : String?=null,
