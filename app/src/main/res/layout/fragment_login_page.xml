@@ -9,7 +9,7 @@
     android:background="@drawable/container">
 
     <EditText
-        android:id="@+id/enterUserName"
+        android:id="@+id/enterUserEmail"
         style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
         android:textColorHint="#4E342E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterUserName"
+        app:layout_constraintTop_toBottomOf="@+id/enterUserEmail"
         android:background="#32ffffff"
         android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
         android:drawablePadding="10dp"

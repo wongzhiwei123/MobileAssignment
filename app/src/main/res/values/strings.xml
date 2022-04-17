@@ -94,8 +94,7 @@
     <string name="confirmPassHint">Confirm password</string>
     <string name="buttonSignUp">Sign Up</string>
     <string name="alrMemberText">Already a member? Sign In here</string>
-    <string name="certificate">Please upload your certificate of authentification to register as a coach.</string>
-    <string name="certificateHint">Upload your certificate here</string>
+    <string name="certificate">Please fill in the form</string>
     <string name="submitCertButton">Submit</string>
     <string name="editNewEmail">Enter new email</string>
     <string name="editPhone">Enter your new phone number</string>
@@ -104,6 +103,17 @@
     <string name="editPassword">Enter your new password</string>
     <string name="confirmEditPass">Confirm your new password</string>
     <string name="goToEdit">Edit Profile</string>
+    <string-array name="Sport">
+        <item>Badminton</item>
+        <item>Basketball</item>
+        <item>Swimming</item>
+        <item>GYM</item>
+    </string-array>
+    <string-array name="yearOfExperience">
+        <item>1-2</item>
+        <item>3-4</item>
+        <item>More than 4</item>
+    </string-array>
 
     <!--Seng Tian-->
     <string name="sendrating">Send Rating</string>
@@ -118,6 +128,9 @@
     <string name="upload">Upload</string>
     <string name="set">Set</string>
     <string name="receipt">Receipt</string>
+    <string name="jobText">Your profession</string>
+    <string name="year">Year of experirence</string>
+    <string name="addCert">Add Cert</string>
 
 
     <!--Weihao-->

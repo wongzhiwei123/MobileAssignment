@@ -174,7 +174,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgview1" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline9"
@@ -184,7 +184,7 @@
             app:layout_constraintGuide_begin="90dp" />
 
         <ImageView
-            android:id="@+id/imgview1"
+            android:id="@+id/imageView6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/subscribe2"
@@ -202,7 +202,7 @@
             android:layout_marginStart="16dp"
             android:text="@string/premium"
             android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@+id/imgview1"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView6"
             app:layout_constraintStart_toStartOf="@+id/guideline9"
             app:layout_constraintTop_toTopOf="parent" />
 

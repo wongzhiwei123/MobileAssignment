@@ -8,97 +8,108 @@
     android:background="@drawable/container"
     tools:context=".Profile.ResetPass">
 
-    <TextView
-        android:id="@+id/resetPageText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/resetText"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backToLogin2" />
-
-    <EditText
-        android:id="@+id/newPass"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="#32ffffff"
-        android:ems="10"
-        android:hint="@string/newpassHint"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#4E342E"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetPageText"
-        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
-        android:drawablePadding="10dp"/>
-
-    <EditText
-        android:id="@+id/confrimNewPass"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="#32ffffff"
-        android:ems="10"
-        android:hint="@string/conNewPassHint"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#4E342E"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newPass"
-        android:drawableLeft="@drawable/ic_baseline_info_24"
-        android:drawablePadding="10dp"/>
-
-    <Button
-        android:id="@+id/submitNewPass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confrimNewPass"
-        tools:text="@string/submitNewPass"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"/>
-
-    <Button
-        android:id="@+id/backToLogin2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="100dp"
-        android:text="@string/backToLogin"
-        app:layout_constraintEnd_toStartOf="@+id/resetPageText"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"/>
-
-    <View
+    <FrameLayout
+        android:id="@+id/resetFrame"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="300dp"
-        android:background="@drawable/small_container"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/small_container"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resetPageText" />
+
+            <Button
+                android:id="@+id/submitNewPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="160dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/confrimNewPass"
+                tools:text="@string/submitNewPass" />
+
+            <EditText
+                android:id="@+id/newPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="16dp"
+                android:background="#32ffffff"
+                android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/newpassHint"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#4E342E"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+            <Button
+                android:id="@+id/backToLogin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="304dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/backToLogin"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/confrimNewPass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#32ffffff"
+                android:drawableLeft="@drawable/ic_baseline_info_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/conNewPassHint"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#4E342E"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newPass" />
+
+            <TextView
+                android:id="@+id/resetPageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginEnd="112dp"
+                android:text="@string/resetText"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

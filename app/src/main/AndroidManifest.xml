@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAssignment">
-        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".Profile.Form"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ForgetPassword"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
