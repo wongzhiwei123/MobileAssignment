@@ -23,7 +23,7 @@ class SignUp : Fragment() {
         val view = inflater.inflate(R.layout.fragment_sign_up, container, false)
         val signUp: Button = view.findViewById(R.id.signUpButton)
         signUp.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.action_signUpAccount_to_certificate)
+            Navigation.findNavController(view).navigate(R.id.action_signUpAccount_to_loginPage)
         }
 
         val signIn: Button = view.findViewById(R.id.alrMember)

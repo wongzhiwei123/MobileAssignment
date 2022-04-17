@@ -11,7 +11,7 @@ import com.example.mobileassignment.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
-class AddBasicClass : Fragment(R.layout.fragment_add_basic_class) {
+class AddBasicClass : Fragment(R.layout.fragment_add_basis_class) {
 
     private lateinit var database : DatabaseReference;
     //private lateinit var storage : StorageReference
@@ -31,7 +31,7 @@ class AddBasicClass : Fragment(R.layout.fragment_add_basic_class) {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_add_basic_class, container, false)
+        val view = inflater.inflate(R.layout.fragment_add_basis_class, container, false)
 
         database = FirebaseDatabase.getInstance().reference
         //storage = FirebaseStorage.getInstance().reference

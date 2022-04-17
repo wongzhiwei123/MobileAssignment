@@ -14,31 +14,28 @@
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_profile.xml" value="0.15443840579710144" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_receipt.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/fragment_subscription.xml" value="0.33" />
+        <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/student_item.xml" value="0.17831813576494426" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/activity_task.xml" value="0.12107396149949341" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/fragment_assign_task.xml" value="0.25" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/fragment_login_page.xml" value="0.25" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/fragment_rating.xml" value="0.2210144927536232" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/fragment_subscription.xml" value="0.1" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/fragment_task.xml" value="0.1" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/fragment_tasklist.xml" value="0.11574074074074074" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/student_item.xml" value="0.24864130434782608" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/task_item.xml" value="0.536" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/layout/tasklist.xml" value="0.1" />
-        <entry key="..\:/Users/Dell/AndroidStudioProjects/MobileAssignment/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/basic_class_details.xml" value="0.6" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_add_basic_class.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_add_basis_class.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_basic_class_details.xml" value="0.264" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_class.xml" value="0.3385416666666667" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_classes.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/fragment_premium_details.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/premium_student_details.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/student_adapter.xml" value="0.1" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/student_details.xml" value="0.25" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/student_item.xml" value="0.1787037037037037" />
-        <entry key="..\:/Users/acer/StudioProjects/MobileAssignment/app/src/main/res/layout/studentdetails.xml" value="0.25" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/drawable/small_container.xml" value="0.2245" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/drawable/transparent.xml" value="0.2245" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/activity_forget_password.xml" value="0.2898550724637681" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/activity_form.xml" value="0.2898550724637681" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/activity_login.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/activity_main.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/activity_reset_password.xml" value="0.2898550724637681" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/activity_sign_up_page.xml" value="0.2898550724637681" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_add_basis_class.xml" value="0.14375" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_certificate.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_class.xml" value="0.14375" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_edit_profile.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_forget_pass.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_forget_password.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_home.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_login_page.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_premium_details.xml" value="0.14375" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_profile.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_reset_pass.xml" value="0.2857789855072464" />
+        <entry key="..\:/Users/mimxu/AndroidStudioProjects/MobileAssignment123/app/src/main/res/layout/fragment_sign_up.xml" value="0.2857789855072464" />
       </map>
     </option>
   </component>

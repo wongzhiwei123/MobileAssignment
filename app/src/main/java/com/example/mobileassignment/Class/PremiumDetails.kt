@@ -58,6 +58,8 @@ class PremiumDetails : Fragment(){
             }
         })
     }
+        //database = FirebaseDatabase.getInstance().reference
+        //recyclerViewStudent = view.findViewById(R.id.rvPremiumStudent)
 
 
 //        recyclerView = view.findViewById(R.id.rvPremiumStudent);
