@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.navigation.Navigation
 import com.example.mobileassignment.R
@@ -35,7 +36,7 @@ class AssignTask : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_assign_task, container, false)
 
-        confirm = view.findViewById<Button>(R.id.btnUpload)
+        confirm = view.findViewById(R.id.btnUpload)
         training = view.findViewById(R.id.editTraining)
         desc = view.findViewById(R.id.editDesc)
         set = view.findViewById(R.id.editSet)
@@ -47,19 +48,16 @@ class AssignTask : Fragment() {
 
             dbref = FirebaseDatabase.getInstance().getReference("TaskList")
             val Task = Task(train,des,sets)
-            dbref.child(train).setValue(Task).addOnSuccessListener {
-
+                dbref.child(train).setValue(Task).addOnSuccessListener {
                 training.text.clear()
                 desc.text.clear()
                 set.text.clear()
+                    Navigation.findNavController(view).navigate(R.id.action_nav_assignTask_to_tasklist)
 
-                Toast.makeText(context,"Successfully uploaded",Toast.LENGTH_SHORT).show()
-                Navigation.findNavController(view).navigate(R.id.action_nav_assignTask_to_tasklist)
-
-            }.addOnFailureListener{
-
-                Toast.makeText(context,"Failed",Toast.LENGTH_SHORT).show()
-            }
+                Toast.makeText(context, "Successfully uploaded", Toast.LENGTH_SHORT).show()
+                }.addOnFailureListener{
+                    Toast.makeText(context,"Failed",Toast.LENGTH_SHORT).show()
+                }
         }
 
     return view

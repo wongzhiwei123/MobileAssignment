@@ -1,21 +1,25 @@
 package com.example.mobileassignment.rating
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.RatingBar
-import android.widget.Toast
+import android.widget.*
+import androidx.navigation.Navigation
 import com.example.mobileassignment.R
+import com.example.mobileassignment.task.Task
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class Rating : Fragment() {
 
 private lateinit var ratingBar: RatingBar
 private lateinit var rate : Button
 private lateinit var cancel : Button
+private lateinit var text: TextView
+private lateinit var dbref : DatabaseReference
+private lateinit var comment : EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,16 +36,30 @@ private lateinit var cancel : Button
         ratingBar = view.findViewById(R.id.ratingBar)
         rate = view.findViewById(R.id.btnRating)
         cancel = view.findViewById(R.id.btnCancelRating)
+        text = view.findViewById(R.id.txtDisatisfied)
+        comment = view.findViewById(R.id.txtComment)
 
         ratingBar.setOnRatingBarChangeListener { ratingBar, fl, b ->
-
-            Toast.makeText(requireContext(),"Rating: " + ratingBar.rating,Toast.LENGTH_LONG).show()
+            text.setText("Rating = $fl")
         }
 
         rate.setOnClickListener{
-            Toast.makeText(requireActivity(),"Your rating is =" + ratingBar.rating,Toast.LENGTH_LONG).show()
+            val rb = ratingBar.rating
+            val cm = comment.text.toString()
+
+            dbref = FirebaseDatabase.getInstance().getReference("Rating")
+            val Rate = Rate(rb,cm)
+            dbref.child(cm).setValue(Rate).addOnSuccessListener {
+
+
+
+                Toast.makeText(context, "Successfully rated", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener{
+                Toast.makeText(context,"Failed",Toast.LENGTH_SHORT).show()
+            }
 
         }
+
         return view
     }
 
