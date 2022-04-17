@@ -1,4 +1,4 @@
-package com.example.mobileassignment.Class;
+package com.example.mobileassignment.classes;
 
 import android.content.Context;
 import android.view.LayoutInflater;

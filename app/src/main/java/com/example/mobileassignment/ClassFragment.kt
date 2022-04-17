@@ -39,7 +39,8 @@ class ClassFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_class, container, false)
         val toBasicClass: Button = view.findViewById(R.id.btnViewBasic)
         toBasicClass.setOnClickListener{
-            Navigation.findNavController(view).navigate(R.id.action_nav_classes_to_basicClassDetails)
+            //Navigation.findNavController(view).navigate(R.id.action_nav_classes_to_basicClassDetails)
+            Navigation.findNavController(view).navigate(R.id.action_nav_classes_to_createBasicClass)
         }
 
         val toPremiumClass: Button = view.findViewById(R.id.btnViewPremium)

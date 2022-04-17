@@ -2,13 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout2"
+    android:id="@+id/frameLayout15"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".classes.AddBasicClass">
+    tools:context=".classes.CreateBasicClass">
 
     <EditText
-        android:id="@+id/edtxtclassName"
+        android:id="@+id/editClassName"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -20,21 +20,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgAddClass" />
+        app:layout_constraintTop_toBottomOf="@+id/imgClass1" />
 
     <Button
-        android:id="@+id/btnCreate"
+        android:id="@+id/btnCreate1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="CREATE"
-        app:layout_constraintEnd_toEndOf="@+id/edtxtDescription"
+        app:layout_constraintEnd_toEndOf="@+id/editDescription"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtxtDescription"
-        app:layout_constraintTop_toBottomOf="@+id/edtxtDescription" />
+        app:layout_constraintStart_toStartOf="@+id/editDescription"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription" />
 
     <ImageView
-        android:id="@+id/imgAddClass"
+        android:id="@+id/imgClass1"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:layout_marginTop="32dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/edtxtDescription"
+        android:id="@+id/editDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -54,30 +54,30 @@
         android:hint="Description"
         android:inputType="textMultiLine"
         android:lines="2"
-        app:layout_constraintEnd_toEndOf="@+id/spinnerTime"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerTime1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/spinnerTime"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerTime" />
+        app:layout_constraintStart_toStartOf="@+id/spinnerTime1"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTime1" />
 
     <Spinner
-        android:id="@+id/spinnerDay"
+        android:id="@+id/spinnerDay1"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:entries="@array/TrainingDay"
-        app:layout_constraintEnd_toEndOf="@+id/edtxtclassName"
+        app:layout_constraintEnd_toEndOf="@+id/editClassName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/edtxtclassName"
-        app:layout_constraintTop_toBottomOf="@+id/edtxtclassName" />
+        app:layout_constraintStart_toStartOf="@+id/editClassName"
+        app:layout_constraintTop_toBottomOf="@+id/editClassName" />
 
     <Spinner
-        android:id="@+id/spinnerTime"
+        android:id="@+id/spinnerTime1"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:entries="@array/TrainingTime"
-        app:layout_constraintEnd_toEndOf="@+id/spinnerDay"
-        app:layout_constraintStart_toStartOf="@+id/spinnerDay"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerDay" />
+        app:layout_constraintEnd_toEndOf="@+id/spinnerDay1"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDay1"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDay1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

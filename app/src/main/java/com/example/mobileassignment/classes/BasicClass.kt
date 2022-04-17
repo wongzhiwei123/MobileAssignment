@@ -1,4 +1,4 @@
-package com.example.mobileassignment.Class
+package com.example.mobileassignment.classes
 
 data class BasicClass(
     var basicClassName: String?=null,
