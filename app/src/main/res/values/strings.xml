@@ -50,7 +50,7 @@
 
     <string-array name="pay_method">
         <item>Visa/Debit Card</item>
-        <item>Razor Pay</item>
+        <item>Cash</item>
     </string-array>
 
     <string name="login">Login</string>
@@ -131,6 +131,7 @@
     <string name="jobText">Your profession</string>
     <string name="year">Year of experirence</string>
     <string name="addCert">Add Cert</string>
+    <string name="payment_reminder">Please pay at your nearest convenient store. Thank you.</string>
 
 
     <!--Weihao-->

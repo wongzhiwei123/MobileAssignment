@@ -10,6 +10,7 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.example.mobileassignment.R
 import com.example.mobileassignment.databinding.FragmentCreateBasicClassBinding
 import com.example.mobileassignment.databinding.FragmentReceiptBinding
@@ -89,35 +90,47 @@ class CreateBasicClass : Fragment() {
             }
 
 
-            var maximumBasisClass = 0
-            var basicClassNumber = 0
-            var type ="";
+//            var maximumBasisClass = 0
+//            var basicClassNumber = 0
+//            var type ="";
 
             val basicClass = BasicClass(className,trainingDay,trainingTime,description)
             val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
             val myRef = database.getReference("user")
 
-            myRef.child("account1").get().addOnSuccessListener {
-                type = it.child("plan").value.toString()
-                basicClassNumber = Integer.parseInt(it.child("BasicClassCount").value.toString())
-            }.addOnFailureListener{
-                //Log.e("firebase", "Error getting data", it)
-            }
 
-            if(type=="Basic"){
-                maximumBasisClass = 5;
-                if(basicClassNumber < maximumBasisClass){
-                    myRef.child("account1").child("Basic").child(className).setValue(basicClass)
-                    myRef.child("account1").child("BasisClassCount").setValue(basicClassNumber+1)
-                    //Navigation.findNavController(root).navigate(R.id.action_nav_profile_to_editProfile2)
-                }else{
-                    Toast.makeText(context,"Maximum Classes Created.",Toast.LENGTH_SHORT).show()
-                }
-            }else if(type=="Premium"){
-                myRef.child("account1").child("Basic").child(className).setValue(basicClass)
-                myRef.child("account1").child("BasisClassCount").setValue(basicClassNumber+1)
-                //Navigation.findNavController(root).navigate(R.id.action_nav_profile_to_editProfile2)
-            }
+//            myRef.child("account1").get().addOnSuccessListener {
+//                type = it.child("plan").value.toString()
+//                basicClassNumber = Integer.parseInt(it.child("BasicClassCount").value.toString())
+//            }.addOnFailureListener{
+//                //Log.e("firebase", "Error getting data", it)
+//            }
+
+            myRef.child("account1").child("Basic").child(className).setValue(basicClass)
+
+            //Navigation.findNavController(root).navigate(R.id.action_createBasicClass_to_basicClassInfo)
+            findNavController().navigate(R.id.action_createBasicClass_to_basicClassInfo, Bundle().apply {
+                putString("className1", className)
+            })
+
+
+//            if(type=="Basic"){
+//                maximumBasisClass = 5;
+//                if(basicClassNumber < maximumBasisClass){
+//                    myRef.child("account1").child("Basic").child(className).setValue(basicClass)
+//                    myRef.child("account1").child("BasisClassCount").setValue(basicClassNumber+1)
+//                    //Navigation.findNavController(root).navigate(R.id.action_nav_profile_to_editProfile2)
+//                }else{
+//                    Toast.makeText(context,"Maximum Classes Created.",Toast.LENGTH_SHORT).show()
+//                }
+//            }else if(type=="Premium"){
+//                myRef.child("account1").child("Basic").child(className).setValue(basicClass)
+//                myRef.child("account1").child("BasisClassCount").setValue(basicClassNumber+1)
+////                findNavController().navigate(R.id.action_createBasicClass_to_basicClassInfo, Bundle().apply {
+////                    putInt("month", 1)
+////
+////                })
+//            }
 
         }
 

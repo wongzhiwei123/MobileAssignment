@@ -8,13 +8,13 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.mobileassignment.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.mobileassignment.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_nav_profile_to_editProfile"
             app:destination="@id/nav_editProfile" />
@@ -59,6 +59,10 @@
         tools:layout="@layout/fragment_checkout">
         <action
             android:id="@+id/action_checkoutFragment_to_paymentMethodFragment"
+            app:destination="@id/paymentMethodFragment" />
+        <action
+            android:id="@+id/action_checkoutFragment_to_receiptFragment"
+            app:destination="@id/receiptFragment" />
             app:destination="@id/paymentMethodFragment"
             app:popUpTo="@id/checkoutFragment"
             app:popUpToInclusive="true" />
@@ -164,7 +168,29 @@
         android:id="@+id/createBasicClass"
         android:name="com.example.mobileassignment.classes.CreateBasicClass"
         android:label="fragment_create_basic_class"
-        tools:layout="@layout/fragment_create_basic_class" />
+        tools:layout="@layout/fragment_create_basic_class" >
+        <action
+            android:id="@+id/action_createBasicClass_to_basicClassInfo"
+            app:destination="@id/basicClassInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicClassInfo"
+        android:name="com.example.mobileassignment.classes.BasicClassInfo"
+        android:label="fragment_basic_class_info"
+        tools:layout="@layout/fragment_basic_class_info" >
+        <action
+            android:id="@+id/action_basicClassInfo_to_editClassInfo"
+            app:destination="@id/editClassInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/editClassInfo"
+        android:name="com.example.mobileassignment.classes.EditClassInfo"
+        android:label="fragment_edit_class_info"
+        tools:layout="@layout/fragment_edit_class_info" >
+        <action
+            android:id="@+id/action_editClassInfo_to_nav_classes"
+            app:destination="@id/nav_classes" />
+    </fragment>
     <fragment
         android:id="@+id/certificate"
         android:name="com.example.mobileassignment.Profile.Certificate"

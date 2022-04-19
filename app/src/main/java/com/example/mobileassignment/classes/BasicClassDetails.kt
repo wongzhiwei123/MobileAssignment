@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileassignment.R
+import com.example.mobileassignment.databinding.FragmentBasicClassDetailsBinding
+import com.example.mobileassignment.databinding.FragmentBasicClassInfoBinding
 import com.google.firebase.database.*
 
 
@@ -16,6 +18,7 @@ class BasicClassDetails : Fragment() {
     private lateinit var database : DatabaseReference
     private lateinit var recyclerViewBasic: RecyclerView
     private lateinit var classArrayList: ArrayList<BasicClass>
+    private lateinit var binding:FragmentBasicClassDetailsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,16 +30,22 @@ class BasicClassDetails : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_basic_class_details, container, false)
+        binding= FragmentBasicClassDetailsBinding.inflate(inflater, container, false)
+        val root: View = binding.root
 
-        recyclerViewBasic = view.findViewById(R.id.rvBasicClass)
+
+        recyclerViewBasic = binding.rvBasicClass
         recyclerViewBasic.layoutManager = LinearLayoutManager(context)
         recyclerViewBasic.setHasFixedSize(true)
 
         classArrayList = arrayListOf<BasicClass>()
         getBasicClass()
 
-        return view
+        binding.btnCreateClass.setOnClickListener{
+
+        }
+
+        return binding.root
     }
 
     private fun getBasicClass() {

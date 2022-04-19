@@ -37,7 +37,7 @@ class PaymentMethodFragment : Fragment() {
         val planS = requireArguments().getInt("planSelect")
         val monthS = requireArguments().getInt("month")
         val totalPay = requireArguments().getInt("total")
-        val methods = requireArguments().getInt("method")
+        val methods = requireArguments().getString("method")
 
         val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
         val myRef = database.getReference("user")
@@ -47,7 +47,7 @@ class PaymentMethodFragment : Fragment() {
                 putInt("month", monthS)
                 putInt("plan", planS)
                 putInt("total", totalPay)
-                putInt("method", methods)
+                putString("method", methods)
             })
                 if(planS==1){
                     myRef.child("account1").child("plan").setValue("Basic")

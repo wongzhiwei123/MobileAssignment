@@ -56,6 +56,7 @@ class CheckoutFragment : Fragment() {
         var basicMonth=0
         var premiumMonth=0
         var totalP=0
+        var finalMonth=0
         btn.setOnClickListener{
             basicMonth= view.findViewById<Spinner>(R.id.basic_month).selectedItemPosition
             premiumMonth= view.findViewById<Spinner>(R.id.premium_month).selectedItemPosition
@@ -64,9 +65,11 @@ class CheckoutFragment : Fragment() {
             val total:TextView=view.findViewById(R.id.totalPayment)
             if(planSelected==1){
                 calculation=88*(basicMonth+1)
+                finalMonth=basicMonth+1
                 textBasic.text=calculation.toString()
             }else if(planSelected==2){
                 calculation=188*(premiumMonth+1)
+                finalMonth=premiumMonth+1
                 textPremium.text=calculation.toString()
             }
             subTotal.text=String.format("%.2f",calculation*0.95)
@@ -89,14 +92,19 @@ class CheckoutFragment : Fragment() {
             if(method==1) {
                 findNavController().navigate(R.id.action_checkoutFragment_to_paymentMethodFragment, Bundle().apply {
                     putInt("planSelect", planSelected)
-                    putInt("month", monthS)
+                    putInt("month", finalMonth)
                     putInt("total", totalP)
                     putString("method", "Credit/Debit Card")
                 })
 //                Navigation.findNavController(view)
 //                    .navigate(R.id.action_checkoutFragment_to_paymentMethodFragment)
             }else if(method==2){
-
+                findNavController().navigate(R.id.action_checkoutFragment_to_receiptFragment, Bundle().apply {
+                    putInt("planSelect", planSelected)
+                    putInt("month", finalMonth)
+                    putInt("total", totalP)
+                    putString("method", "Cash")
+                })
             }
         }
 

@@ -55,6 +55,7 @@ class AssignTask : Fragment() {
 
 
                     Navigation.findNavController(view).navigate(R.id.action_nav_assignTask_to_tasklist)
+                //Navigation.findNavController(view).navigate(R.id.action_nav_assignTask_to_tasklist)
 
                 Toast.makeText(context, "Successfully uploaded", Toast.LENGTH_SHORT).show()
 
@@ -62,6 +63,9 @@ class AssignTask : Fragment() {
                 }.addOnFailureListener{
                     Toast.makeText(context,"Failed",Toast.LENGTH_SHORT).show()
                 }
+                Toast.makeText(context,"Successfully uploaded",Toast.LENGTH_SHORT).show()
+
+
         }
 
     return view
