@@ -17,8 +17,6 @@ import com.google.firebase.ktx.Firebase
 
 class ProfileFragment : Fragment() {
 
-    //val sharedPref: SharedPreferences = requireActivity().getSharedPreferences("login", Context.MODE_PRIVATE)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -51,22 +49,6 @@ class ProfileFragment : Fragment() {
             weight.text = it.child("weight").value.toString()
             bio.text = it.child("bio").value.toString()
         }
-//
-//        myRef.addValueEventListener(object : ValueEventListener {
-//            override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                // This method is called once with the initial value and again
-//                // whenever data at this location is updated.
-//                val value = dataSnapshot.getValue()
-//                Log.d(TAG, "Value is: $value")
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//                // Failed to read value
-//                Log.w(TAG, "Failed to read value.", error.toException())
-//            }
-//
-//
-//        })
 
         val gotoEdit: Button = view.findViewById(R.id.editProfile)
         gotoEdit.setOnClickListener{
@@ -77,12 +59,11 @@ class ProfileFragment : Fragment() {
         val signout: Button = view.findViewById(R.id.buttonSignOut) //cannot in edit
         signout.setOnClickListener{
 
-            (activity as? LoginActivity)?.let{
+            (activity as? MainActivity)?.let{
                 val intent = Intent (it, LoginActivity::class.java)
                 it.startActivity(intent)
             }
 
-            //supportFragmentManager.beginTransaction().replace(R.id.mainContainer, LoginActivity()).commit()
         }
 
         return view

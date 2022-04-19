@@ -14,11 +14,11 @@ class SignUpPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up_page)
 
+        val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        val myRef = database.getReference("user")
+
         val signUp: Button = findViewById(R.id.signUpButton);
         signUp.setOnClickListener {
-
-            val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
-            val myRef = database.getReference("user")
 
             val name : EditText = findViewById(R.id.userNameEnter)
             val userName = name.text.toString()
@@ -30,16 +30,19 @@ class SignUpPage : AppCompatActivity() {
             val userHeight = height.text.toString()
             val weight : EditText = findViewById(R.id.enterWeight)
             val userWeight = weight.text.toString()
-            val pass : EditText = findViewById(R.id.editPassword)
+            val pass : EditText = findViewById(R.id.editTextTextPassword)
             val userPass = pass.text.toString()
-            val conPass : EditText = findViewById(R.id.confirmEditPassword)
+            val conPass : EditText = findViewById(R.id.confirmUserPass)
             val conP = conPass.text.toString()
 
-            myRef.child("account2").child("details").child("phone").setValue(userName)
-            myRef.child("account2").child("details").child("phone").setValue(userEmail)
+            //myRef.child(userEmail.toString()).child("details").child("name").setValue(userName)
+            myRef.child("account2").child("details").setValue("")
+            myRef.child("account2").child("details").child("name").setValue(userName)
+            myRef.child("account2").child("details").child("email").setValue(userEmail)
             myRef.child("account2").child("details").child("phone").setValue(userPhone)
             myRef.child("account2").child("details").child("height").setValue(userHeight)
             myRef.child("account2").child("details").child("weight").setValue(userWeight)
+            myRef.child("account2").child("details").child("bio").setValue("")
 
             if(userPass != null && conP != null){
                 if(userPass== conP){
@@ -50,7 +53,7 @@ class SignUpPage : AppCompatActivity() {
                 }
             }
 
-            Toast.makeText(this, "Registered. ", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Registered.", Toast.LENGTH_LONG).show()
             finish()
         }
 
