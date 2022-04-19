@@ -46,7 +46,7 @@ class ReceiptFragment : Fragment() {
             binding.selectedMonthP.text=monthS.toString()
             binding.reminder.isVisible=true
         }
-
+        binding.selectedMonthP.text=monthS.toString()
         binding.payment.text=totalPay.toString()
         binding.method.text=methods
 

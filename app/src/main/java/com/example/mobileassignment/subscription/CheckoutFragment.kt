@@ -13,6 +13,8 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.mobileassignment.R
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 
 class CheckoutFragment : Fragment() {
 
@@ -79,10 +81,18 @@ class CheckoutFragment : Fragment() {
         }
 
         //checkout button
+        val database = Firebase.database("https://findyourcoach-3083a-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        val myRef = database.getReference("user")
+
         val checkout: Button = view.findViewById(R.id.btn_checkout)
         var method=0
         var monthS=0
         checkout.setOnClickListener{
+            if(planSelected==1){
+                myRef.child("account1").child("plan").setValue("Basic")
+            }else if(planSelected==2){
+                myRef.child("account1").child("plan").setValue("Premium")
+            }
             method = view.findViewById<Spinner>(R.id.pay_spinner).selectedItemPosition+1
             if(planSelected==1){
                 monthS=basicMonth
