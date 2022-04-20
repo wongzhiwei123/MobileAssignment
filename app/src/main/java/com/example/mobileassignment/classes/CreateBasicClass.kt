@@ -39,6 +39,10 @@ class CreateBasicClass : Fragment() {
         binding= FragmentCreateBasicClassBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        var maximumBasic = 0
+        var basicClassNumber = 0
+        var userType = ""
+
         binding.btnCreate1.setOnClickListener{
             var trainingDay = ""
             var trainingTime= ""
@@ -46,7 +50,6 @@ class CreateBasicClass : Fragment() {
             val trainingDaySelect = binding.spinnerDay1.selectedItemPosition
             val trainingTimeSelect = binding.spinnerTime1.selectedItemPosition
             val description = binding.editDescription.text.toString()
-
 
             if(trainingDaySelect == 0){
                 trainingDay = "Monday"
@@ -99,19 +102,38 @@ class CreateBasicClass : Fragment() {
             val myRef = database.getReference("user")
 
 
-//            myRef.child("account1").get().addOnSuccessListener {
-//                type = it.child("plan").value.toString()
-//                basicClassNumber = Integer.parseInt(it.child("BasicClassCount").value.toString())
-//            }.addOnFailureListener{
-//                //Log.e("firebase", "Error getting data", it)
-//            }
 
-            myRef.child("account1").child("Basic").child(className).setValue(basicClass)
+            myRef.child("account1").get().addOnSuccessListener {
+                val userType = it.child("plan").value.toString()
+                basicClassNumber = Integer.parseInt(it.child("BasicClassNumber").value.toString())
+
+                if(userType == "Premium"){
+                    maximumBasic = 999
+                }
+                else if(userType == "Basic"){
+                    maximumBasic = 5
+                }
+
+
+                if(basicClassNumber < maximumBasic){
+                    myRef.child("account1").child("Basic").child(className).setValue(basicClass)
+                    myRef.child("account1").child("BasicClassNumber").setValue(basicClassNumber + 1)
+                    findNavController().navigate(R.id.action_createBasicClass_to_basicClassInfo, Bundle().apply {
+                        putString("className1", className)
+                    })
+                }
+                else{
+                    Toast.makeText(this.requireContext(), "Maximum Classes reached ", Toast.LENGTH_LONG).show()
+                    Navigation.findNavController(root).navigate(R.id.action_createBasicClass_to_basicClassDetails)
+                }
+
+            }.addOnFailureListener{
+
+            }
+
+            //myRef.child("account1").child("Basic").child(className).setValue(basicClass)
 
             //Navigation.findNavController(root).navigate(R.id.action_createBasicClass_to_basicClassInfo)
-            findNavController().navigate(R.id.action_createBasicClass_to_basicClassInfo, Bundle().apply {
-                putString("className1", className)
-            })
 
 
 //            if(type=="Basic"){
@@ -130,7 +152,7 @@ class CreateBasicClass : Fragment() {
 ////                    putInt("month", 1)
 ////
 ////                })
-//            }
+//
 
         }
 

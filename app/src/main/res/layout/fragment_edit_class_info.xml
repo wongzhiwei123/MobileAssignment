@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout16"
+    android:id="@+id/framelayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".classes.EditClassInfo">>
@@ -88,30 +88,6 @@
         app:layout_constraintTop_toTopOf="@+id/textView22" />
 
     <EditText
-        android:id="@+id/modifyDay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/textView23"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/textView23"
-        app:layout_constraintTop_toTopOf="@+id/textView23"
-        app:layout_constraintVertical_bias="0.423" />
-
-    <EditText
-        android:id="@+id/modifyTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/textView24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView24"
-        app:layout_constraintTop_toTopOf="@+id/textView24" />
-
-    <EditText
         android:id="@+id/modifyDes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -125,5 +101,24 @@
         app:layout_constraintStart_toEndOf="@+id/textView25"
         app:layout_constraintTop_toTopOf="@+id/textView25"
         app:layout_constraintVertical_bias="0.404" />
+
+    <Spinner
+        android:id="@+id/modifyDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/TrainingDay"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <Spinner
+        android:id="@+id/modifyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/TrainingTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

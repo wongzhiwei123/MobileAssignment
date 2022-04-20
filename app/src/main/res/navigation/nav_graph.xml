@@ -49,9 +49,6 @@
             app:popUpTo="@id/nav_classes"
             app:popUpToInclusive="true" />
         <action
-            android:id="@+id/action_nav_classes_to_createBasicClass"
-            app:destination="@id/createBasicClass" />
-        <action
             android:id="@+id/action_nav_classes_to_basicClassDetails2"
             app:destination="@id/basicClassDetails" />
     </fragment>
@@ -179,6 +176,9 @@
         <action
             android:id="@+id/action_createBasicClass_to_basicClassInfo"
             app:destination="@id/basicClassInfo" />
+        <action
+            android:id="@+id/action_createBasicClass_to_basicClassDetails"
+            app:destination="@id/basicClassDetails" />
     </fragment>
     <fragment
         android:id="@+id/basicClassInfo"
@@ -188,6 +188,9 @@
         <action
             android:id="@+id/action_basicClassInfo_to_editClassInfo"
             app:destination="@id/editClassInfo" />
+        <action
+            android:id="@+id/action_basicClassInfo_to_basicClassDetails"
+            app:destination="@id/basicClassDetails" />
     </fragment>
     <fragment
         android:id="@+id/editClassInfo"

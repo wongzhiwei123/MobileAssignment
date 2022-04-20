@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.mobileassignment.R
 import com.example.mobileassignment.databinding.FragmentBasicClassInfoBinding
@@ -48,6 +49,10 @@ class BasicClassInfo : Fragment() {
             findNavController().navigate(R.id.action_basicClassInfo_to_editClassInfo, Bundle().apply {
                 putString("className1", className2)
             })
+        }
+
+        binding.btnConfirm.setOnClickListener{
+            Navigation.findNavController(root).navigate(R.id.action_basicClassInfo_to_basicClassDetails)
         }
 
         return binding.root

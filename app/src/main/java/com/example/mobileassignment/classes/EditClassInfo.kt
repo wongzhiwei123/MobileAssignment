@@ -41,9 +41,52 @@ class EditClassInfo : Fragment() {
 
         binding.btnModify.setOnClickListener{
             val modClassName = binding.modifyClassName.text.toString()
-            val modDay = binding.modifyDay.text.toString()
-            val modTime = binding.modifyTime.text.toString()
+            val modDaySelected = binding.modifyDay.selectedItemPosition
+            val modTimeSelected = binding.modifyTime.selectedItemPosition
             val modDes = binding.modifyDes.text.toString()
+            var modDay = ""
+            var modTime = ""
+
+            if(modDaySelected == 0){
+                modDay = "Monday"
+            }
+            else if (modDaySelected == 1){
+                modDay = "Tuesday"
+            }
+            else if (modDaySelected == 2){
+                modDay = "Wednesday"
+            }
+            else if (modDaySelected == 3){
+                modDay = "Thursday"
+            }
+            else if (modDaySelected == 4){
+                modDay = "Friday"
+            }
+            else if (modDaySelected == 5){
+                modDay = "Saturday"
+            }
+            else if (modDaySelected == 6){
+                modDay = "Sunday"
+            }
+
+            if(modTimeSelected == 0){
+                modTime = "8:00am - 10:00am"
+            }
+            else if (modTimeSelected == 1){
+                modTime = "10:00am - 12:00pm"
+            }
+            else if (modTimeSelected == 2){
+                modTime = "1:00pm - 3:00pm"
+            }
+            else if (modTimeSelected == 3){
+                modTime = "3:00pm - 5:00pm"
+            }
+            else if (modTimeSelected == 4){
+                modTime = "5:00pm - 7:00pm"
+            }
+            else if (modTimeSelected == 5){
+                modTime = "7:00pm - 9:00pm"
+            }
 
             myRef.child("account1").child("Basic").child(className1).child("basicClassName").setValue(modClassName)
             myRef.child("account1").child("Basic").child(className1).child("basicTrainingDay").setValue(modDay)
