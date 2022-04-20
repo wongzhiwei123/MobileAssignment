@@ -1,6 +1,7 @@
 package com.example.mobileassignment.classes
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -47,7 +48,7 @@ class PremiumDetails : Fragment(){
     }
 
     private fun getPremiumStudent() {
-        database = FirebaseDatabase.getInstance().getReference("premium")
+        database = FirebaseDatabase.getInstance().getReference("user").child("account1").child("Premium")
 
         database.addValueEventListener(object: ValueEventListener {
 
@@ -56,6 +57,7 @@ class PremiumDetails : Fragment(){
                     for(premiumSnap in snapshot.children){
                         val pStudent = premiumSnap.getValue(PremiumStudent::class.java)
                         premiumStudentArrayList.add(pStudent!!)
+                        Log.d("Premium","Success")
                     }
                     binding.rvPremiumStudent.adapter = PremiumStudentAdapter(premiumStudentArrayList)
                 }

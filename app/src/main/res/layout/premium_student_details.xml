@@ -37,7 +37,7 @@
                 app:layout_constraintTop_toTopOf="@+id/imgStudent" />
 
             <TextView
-                android:id="@+id/txtStudentTrainingDate"
+                android:id="@+id/txtStudentBookingDate"
                 android:layout_width="110dp"
                 android:layout_height="45dp"
                 android:text="Training Date"
@@ -46,14 +46,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/txtStudentName" />
 
             <TextView
-                android:id="@+id/txtStudentTrainingTime"
+                android:id="@+id/txtStudentBookingTime"
                 android:layout_width="110dp"
                 android:layout_height="45dp"
                 android:text="Training Time"
                 app:layout_constraintBottom_toBottomOf="@+id/imgStudent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/txtStudentTrainingDate"
+                app:layout_constraintStart_toEndOf="@+id/txtStudentBookingDate"
                 app:layout_constraintTop_toBottomOf="@+id/txtStudentName"
                 app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>

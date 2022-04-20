@@ -19,12 +19,8 @@ class PremiumStudentAdapter(private val premiumStudentList: ArrayList<PremiumStu
         val currentStudent = premiumStudentList[position]
 
         holder.studentName.text = currentStudent.studentName
-        holder.trainingDate.text = currentStudent.trainingDate
-        holder.trainingTime.text = currentStudent.trainingTime
-
-//        if(student.imageUri != null){
-//            holder.imageUri.setImageURI(student.imageUri)
-//        }
+        holder.bookingDate.text = currentStudent.bookingDate
+        holder.bookingTime.text = currentStudent.bookingTime
     }
 
     override fun getItemCount(): Int {
@@ -33,8 +29,8 @@ class PremiumStudentAdapter(private val premiumStudentList: ArrayList<PremiumStu
 
     class PremiumStudentViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val studentName: TextView = itemView.findViewById(R.id.txtStudentName)
-        val trainingDate: TextView = itemView.findViewById(R.id.txtStudentTrainingDate)
-        val trainingTime: TextView = itemView.findViewById(R.id.txtStudentTrainingTime)
+        val bookingDate: TextView = itemView.findViewById(R.id.txtStudentBookingDate)
+        val bookingTime: TextView = itemView.findViewById(R.id.txtStudentBookingTime)
         //val imageUri: ImageView = itemView.findViewById(R.id.imgClass)
     }
 }
