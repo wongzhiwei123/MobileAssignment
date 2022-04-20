@@ -7,10 +7,6 @@
     tools:context=".classes.PremiumDetails">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -23,14 +19,4 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/premium_student_details" />
 
-    <ImageButton
-        android:id="@+id/imgbtnAdd"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:contentDescription="addPremium"
-        android:src="@drawable/ic_baseline_add_circle_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

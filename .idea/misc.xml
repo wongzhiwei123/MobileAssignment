@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/basic_class_details.xml" value="0.5" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/fragment_basic_class_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/fragment_class.xml" value="0.67" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/fragment_edit_class_info.xml" value="0.36666666666666664" />
         <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/fragment_home.xml" value="0.5" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/fragment_premium_details.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/fragment_tasklist.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/premium_student_details.xml" value="0.3023255813953488" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/student_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Mobile Practical/FindYourCoach/app/src/main/res/layout/task_item.xml" value="0.33" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/bottom_nav_colors.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/drawable/container.xml" value="0.1" />
         <entry key="..\:/Mobile Practical/MobileAssignment/app/src/main/res/layout/activity_add_basis.xml" value="0.36666666666666664" />

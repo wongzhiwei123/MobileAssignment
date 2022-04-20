@@ -40,15 +40,15 @@ class EditClassInfo : Fragment() {
 
 
         binding.btnModify.setOnClickListener{
-//            val modClassName = binding.modifyClassName.text
-//            val modDay = binding.modifyClassName.text
-//            val modTime = binding.modifyClassName.text
-//            val modDes = binding.modifyDes.text
-//
-//            myRef.child("account1").child("Basic").child(className1).child("basicClassName").setValue(modClassName)
-//            myRef.child("account1").child("Basic").child(className1).child("basicTrainingDay").setValue(modDay)
-//            myRef.child("account1").child("Basic").child(className1).child("basicTrainingTime").setValue(modTime)
-//            myRef.child("account1").child("Basic").child(className1).child("basicDescription").setValue(modDes)
+            val modClassName = binding.modifyClassName.text.toString()
+            val modDay = binding.modifyDay.text.toString()
+            val modTime = binding.modifyTime.text.toString()
+            val modDes = binding.modifyDes.text.toString()
+
+            myRef.child("account1").child("Basic").child(className1).child("basicClassName").setValue(modClassName)
+            myRef.child("account1").child("Basic").child(className1).child("basicTrainingDay").setValue(modDay)
+            myRef.child("account1").child("Basic").child(className1).child("basicTrainingTime").setValue(modTime)
+            myRef.child("account1").child("Basic").child(className1).child("basicDescription").setValue(modDes)
             Navigation.findNavController(root).navigate(R.id.action_editClassInfo_to_nav_classes)
         }
         return binding.root

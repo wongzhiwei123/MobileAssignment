@@ -8,11 +8,15 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileassignment.R
+import com.example.mobileassignment.databinding.FragmentCreateBasicClassBinding
+import com.example.mobileassignment.databinding.FragmentPremiumDetailsBinding
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.fragment_premium_details.view.*
 
 
 class PremiumDetails : Fragment(){
 
+    private lateinit var binding:FragmentPremiumDetailsBinding
     private lateinit var recyclerViewStudent: RecyclerView
     private lateinit var database: DatabaseReference
     private lateinit var premiumStudentArrayList: ArrayList<PremiumStudent>
@@ -27,30 +31,33 @@ class PremiumDetails : Fragment(){
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_premium_details, container, false)
+        binding = FragmentPremiumDetailsBinding.inflate(inflater, container, false)
+       val root = binding.root
+        //val view = inflater.inflate(R.layout.fragment_premium_details, container, false)
 
-        recyclerViewStudent = view.findViewById(R.id.rvPremiumStudent)
-        recyclerViewStudent.layoutManager = LinearLayoutManager(context)
-        recyclerViewStudent.setHasFixedSize(true)
+
+        //recyclerViewStudent = view.findViewById(R.id.rvPremiumStudent)
+        binding.rvPremiumStudent.layoutManager = LinearLayoutManager(context)
+        binding.rvPremiumStudent.setHasFixedSize(true)
 
         premiumStudentArrayList = arrayListOf<PremiumStudent>()
         getPremiumStudent()
 
-        return view
+        return root
     }
 
     private fun getPremiumStudent() {
-        database = FirebaseDatabase.getInstance().getReference("user")
+        database = FirebaseDatabase.getInstance().getReference("premium")
 
         database.addValueEventListener(object: ValueEventListener {
 
-            override fun onDataChange(snapshot1: DataSnapshot){
-                if(snapshot1.exists()){
-                    for(basicClassSnapshot in snapshot1.children){
-                        val premiumStudent = basicClassSnapshot.getValue(PremiumStudent::class.java)
-                        premiumStudentArrayList.add(premiumStudent!!)
+            override fun onDataChange(snapshot: DataSnapshot){
+                if(snapshot.exists()){
+                    for(premiumSnap in snapshot.children){
+                        val pStudent = premiumSnap.getValue(PremiumStudent::class.java)
+                        premiumStudentArrayList.add(pStudent!!)
                     }
-                    recyclerViewStudent.adapter = PremiumStudentAdapter(premiumStudentArrayList)
+                    binding.rvPremiumStudent.adapter = PremiumStudentAdapter(premiumStudentArrayList)
                 }
             }
             override fun onCancelled(error: DatabaseError){

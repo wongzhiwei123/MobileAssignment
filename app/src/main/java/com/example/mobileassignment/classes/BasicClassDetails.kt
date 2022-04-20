@@ -18,6 +18,7 @@ class BasicClassDetails : Fragment() {
     private lateinit var database : DatabaseReference
     private lateinit var recyclerViewBasic: RecyclerView
     private lateinit var classArrayList: ArrayList<BasicClass>
+
     private lateinit var binding:FragmentBasicClassDetailsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,33 +42,31 @@ class BasicClassDetails : Fragment() {
         classArrayList = arrayListOf<BasicClass>()
         getBasicClass()
 
-        binding.btnCreateClass.setOnClickListener{
+//        binding.btnCreateClass.setOnClickListener{
+//
+//        }
 
-        }
-
-        return binding.root
+        return root
     }
 
     private fun getBasicClass() {
-        database = FirebaseDatabase.getInstance().getReference("class")
+        database = FirebaseDatabase.getInstance().getReference("BasicClass")
 
         database.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {
 
-                classArrayList.clear()
                 if(snapshot.exists()){
+
                     for (classSnap in snapshot.children){
                         val bClass = classSnap.getValue(BasicClass::class.java)
                         classArrayList.add(bClass!!)
                     }
-                    val mAdapter = BasicClassAdapter(classArrayList)
-                    recyclerViewBasic.adapter = mAdapter;
+                    recyclerViewBasic.adapter = BasicClassAdapter(classArrayList)
                 }
 
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
             }
 
         })

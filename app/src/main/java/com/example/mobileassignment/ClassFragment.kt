@@ -45,7 +45,7 @@ class ClassFragment : Fragment() {
 
         val toPremiumClass: Button = view.findViewById(R.id.btnViewPremium)
         toPremiumClass.setOnClickListener{
-            //Navigation.findNavController(view).navigate(R.id.action_nav_classes_to_premiumDetails)
+            Navigation.findNavController(view).navigate(R.id.action_nav_classes_to_basicClassDetails)
         }
         return view
     }
