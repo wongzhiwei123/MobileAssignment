@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mobileassignment.R
@@ -42,15 +43,15 @@ class BasicClassDetails : Fragment() {
         classArrayList = arrayListOf<BasicClass>()
         getBasicClass()
 
-//        binding.btnCreateClass.setOnClickListener{
-//
-//        }
+        binding.btnCreate2.setOnClickListener{
+            Navigation.findNavController(root).navigate(R.id.action_basicClassDetails_to_createBasicClass)
+        }
 
         return root
     }
 
     private fun getBasicClass() {
-        database = FirebaseDatabase.getInstance().getReference("BasicClass")
+        database = FirebaseDatabase.getInstance().getReference("user").child("account1").child("Basic")
 
         database.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(snapshot: DataSnapshot) {

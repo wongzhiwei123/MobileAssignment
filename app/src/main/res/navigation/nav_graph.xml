@@ -144,7 +144,11 @@
         android:id="@+id/basicClassDetails"
         android:name="com.example.mobileassignment.classes.BasicClassDetails"
         android:label="Basic Classes"
-        tools:layout="@layout/fragment_basic_class_details" />
+        tools:layout="@layout/fragment_basic_class_details" >
+        <action
+            android:id="@+id/action_basicClassDetails_to_createBasicClass"
+            app:destination="@id/createBasicClass" />
+    </fragment>
     <fragment
         android:id="@+id/nav_assignTask"
         android:name="com.example.mobileassignment.task.AssignTask"

@@ -9,20 +9,15 @@ import com.example.mobileassignment.R
 
 class PremiumStudentAdapter(private val premiumStudentList: ArrayList<PremiumStudent>): RecyclerView.Adapter<PremiumStudentAdapter.PremiumStudentViewHolder>(){
 
-    override fun getItemCount(): Int {
-        return premiumStudentList.size
-    }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PremiumStudentViewHolder {
-//        return PremiumStudentViewHolder(
-//            LayoutInflater.from(parent.context).inflate(R.layout.fragment_premium_details,parent,false)
-//        )
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.premium_student_details,parent,false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.premium_student_details,
+            parent,false)
         return PremiumStudentViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: PremiumStudentViewHolder, position: Int) {
         val currentStudent = premiumStudentList[position]
+
         holder.studentName.text = currentStudent.studentName
         holder.trainingDate.text = currentStudent.trainingDate
         holder.trainingTime.text = currentStudent.trainingTime
@@ -31,6 +26,11 @@ class PremiumStudentAdapter(private val premiumStudentList: ArrayList<PremiumStu
 //            holder.imageUri.setImageURI(student.imageUri)
 //        }
     }
+
+    override fun getItemCount(): Int {
+        return premiumStudentList.size
+    }
+
     class PremiumStudentViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val studentName: TextView = itemView.findViewById(R.id.txtStudentName)
         val trainingDate: TextView = itemView.findViewById(R.id.txtStudentTrainingDate)
