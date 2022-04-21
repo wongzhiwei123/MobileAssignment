@@ -63,7 +63,6 @@ class ProfileFragment : Fragment() {
                 val intent = Intent (it, LoginActivity::class.java)
                 it.startActivity(intent)
             }
-
         }
 
         return view

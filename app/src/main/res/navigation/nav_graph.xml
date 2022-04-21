@@ -81,8 +81,8 @@
     <fragment
         android:id="@+id/nav_editProfile"
         android:name="com.example.mobileassignment.Profile.EditProfile"
-        android:label="fragment_edit_profile"
-        tools:layout="@layout/fragment_edit_profile" >
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile">
         <action
             android:id="@+id/action_nav_editProfile_to_nav_profile"
             app:destination="@id/nav_profile" />
@@ -149,13 +149,16 @@
     <fragment
         android:id="@+id/nav_assignTask"
         android:name="com.example.mobileassignment.task.AssignTask"
-        android:label="fragment_assign_task"
-        tools:layout="@layout/fragment_assign_task" >
+        android:label="Assign Task"
+        tools:layout="@layout/fragment_assign_task">
         <action
             android:id="@+id/action_nav_assignTask_to_tasklist"
             app:destination="@id/tasklist"
             app:popUpTo="@id/nav_assignTask"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_assignTask_to_nav_home"
+            app:destination="@id/nav_home" />
     </fragment>
     <fragment
         android:id="@+id/receiptFragment"

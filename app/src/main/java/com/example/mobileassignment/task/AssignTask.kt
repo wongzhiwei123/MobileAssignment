@@ -66,6 +66,11 @@ class AssignTask : Fragment() {
 
         }
 
+        val cancel : Button = view.findViewById(R.id.btnCancel)
+
+        cancel.setOnClickListener{
+            Navigation.findNavController(view).navigate(R.id.action_nav_assignTask_to_nav_home)
+        }
     return view
 
     }
